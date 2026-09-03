@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>بيت آرت للمقاولات والديكورات | الرياض</title>
+
+<meta name="description" content="بيت آرت للمقاولات والديكورات وجميع أعمال المنازل في الرياض. خصم 30% لأول 20 عميل.">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Tahoma,Arial,sans-serif;
+    background:#f6f6f6;
+    color:#222;
+    line-height:1.8;
+}
+
+a{
+    text-decoration:none;
+}
+
+.hero{
+    background:
+    linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.78)),
+    linear-gradient(135deg,#292929,#101010);
+    color:#fff;
+    text-align:center;
+    padding:55px 18px 45px;
+}
+
+.logo-text{
+    color:#d6ad4b;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:35px;
+    line-height:1.45;
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:#d6ad4b;
+}
+
+.hero p{
+    max-width:720px;
+    margin:0 auto;
+    color:#eee;
+    font-size:18px;
+}
+
+.offer{
+    max-width:570px;
+    margin:25px auto;
+    background:#d6ad4b;
+    color:#111;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,.3);
+}
+
+.offer-title{
+    font-size:31px;
+    font-weight:bold;
+    display:block;
+}
+
+.offer-text{
+    font-size:17px;
+    font-weight:bold;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:25px;
+}
+
+.btn{
+    min-width:200px;
+    padding:16px 25px;
+    border-radius:11px;
+    font-size:17px;
+    font-weight:bold;
+    transition:.2s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.whatsapp{
+    background:#25D366;
+    color:#fff;
+}
+
+.call{
+    background:#fff;
+    color:#111;
+}
+
+section{
+    padding:55px 18px;
+}
+
+.container{
+    max-width:1050px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.section-title h2{
+    font-size:29px;
+    margin-bottom:8px;
+}
+
+.section-title p{
+    color:#666;
+    font-size:16px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.service{
+    background:#fff;
+    padding:28px 20px;
+    border-radius:16px;
+    text-align:center;
+    border:1px solid #eee;
+    box-shadow:0 5px 18px rgba(0,0,0,.07);
+}
+
+.service-icon{
+    font-size:42px;
+    margin-bottom:8px;
+}
+
+.service h3{
+    font-size:20px;
+    margin-bottom:6px;
+}
+
+.service p{
+    color:#666;
+    font-size:14px;
+}
+
+.why{
+    background:#fff;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.feature{
+    text-align:center;
+    padding:20px;
+}
+
+.feature-icon{
+    width:62px;
+    height:62px;
+    background:#d6ad4b;
+    border-radius:50%;
+    margin:0 auto 15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:25px;
+    font-weight:bold;
+}
+
+.feature h3{
+    font-size:19px;
+    margin-bottom:6px;
+}
+
+.feature p{
+    color:#666;
+    font-size:14px;
+}
+
+.highlight{
+    background:#f6f6f6;
+}
+
+.highlight-box{
+    max-width:850px;
+    margin:auto;
+    background:#fff;
+    border-radius:18px;
+    padding:35px 25px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.highlight-box h2{
+    font-size:27px;
+    margin-bottom:12px;
+}
+
+.highlight-box p{
+    color:#555;
+    font-size:16px;
+}
+
+.city{
+    color:#d09f2f;
+    font-weight:bold;
+}
+
+.cta{
+    background:#181818;
+    color:#fff;
+    text-align:center;
+}
+
+.cta h2{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.cta p{
+    color:#ddd;
+    font-size:16px;
+}
+
+.phone{
+    display:block;
+    direction:ltr;
+    color:#d6ad4b;
+    font-size:29px;
+    font-weight:bold;
+    margin:12px 0;
+}
+
+footer{
+    background:#0d0d0d;
+    color:#aaa;
+    text-align:center;
+    padding:22px 15px;
+    font-size:13px;
+}
+
+.floating-whatsapp{
+    position:fixed;
+    right:18px;
+    bottom:18px;
+    width:62px;
+    height:62px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:31px;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+    z-index:9999;
+}
+
+@media(max-width:700px){
+
+    .hero{
+        padding:42px 15px 38px;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .offer-title{
+        font-size:27px;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+    .services{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:42px 15px;
+    }
+
+}
+
+@media(max-width:430px){
+
+    .services{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:25px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+
+<div class="logo-text">
+بيت آرت للمقاولات والديكورات
+</div>
+
+<h1>
+جميع أعمال المنازل
+<br>
+<span>باحترافية وجودة في الرياض</span>
+</h1>
+
+<p>
+متخصصون في المقاولات والديكورات والتشطيبات والترميم
+وجميع أعمال المنازل في الرياض.
+</p>
+
+<div class="offer">
+
+<span class="offer-title">
+🔥 خصم 30%
+</span>
+
+<span class="offer-text">
+لأول 20 عميل فقط
+</span>
+
+</div>
+
+<div class="buttons">
+
+<a
+class="btn whatsapp"
+href="https://wa.me/966549699045"
+target="_blank">
+💬 تواصل عبر واتساب
+</a>
+
+<a
+class="btn call"
+href="tel:+966549699045">
+📞 اتصل الآن
+</a>
+
+</div>
+
+</header>
+
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+خدماتنا
+</h2>
+
+<p>
+جميع احتياجات منزلك في مكان واحد
+</p>
+
+</div>
+
+<div class="services">
+
+
+<div class="service">
+
+<div class="service-icon">
+🏠
+</div>
+
+<h3>
+تشطيبات المنازل
+</h3>
+
+<p>
+تنفيذ وتشطيب المنازل بجودة واحترافية عالية.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🎨
+</div>
+
+<h3>
+الديكورات
+</h3>
+
+<p>
+ديكورات داخلية ولمسات عصرية تناسب منزلك.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🧱
+</div>
+
+<h3>
+ترميم وتجديد
+</h3>
+
+<p>
+ترميم وتجديد المنازل وإعادة تأهيل مختلف المساحات.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🔨
+</div>
+
+<h3>
+أعمال المقاولات
+</h3>
+
+<p>
+تنفيذ مختلف أعمال المقاولات للمنازل.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🛠️
+</div>
+
+<h3>
+أعمال الصيانة
+</h3>
+
+<p>
+أعمال صيانة وتجديد وحلول متكاملة للمنزل.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+✨
+</div>
+
+<h3>
+تجديد المنازل
+</h3>
+
+<p>
+تغيير وتجديد المنزل بمظهر عصري وأنيق.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="why">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+لماذا بيت آرت؟
+</h2>
+
+<p>
+نهتم بالتفاصيل من البداية حتى الانتهاء
+</p>
+
+</div>
+
+<div class="features">
+
+
+<div class="feature">
+
+<div class="feature-icon">
+✓
+</div>
+
+<h3>
+تنفيذ احترافي
+</h3>
+
+<p>
+نهتم بجودة التنفيذ ودقة التفاصيل.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+★
+</div>
+
+<h3>
+أسعار مناسبة
+</h3>
+
+<p>
+عروض مميزة وأسعار مناسبة لعملائنا.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+⌂
+</div>
+
+<h3>
+خدمة في الرياض
+</h3>
+
+<p>
+نخدم مختلف أحياء مدينة الرياض.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="highlight">
+
+<div class="container">
+
+<div class="highlight-box">
+
+<h2>
+🏡 بيتك يستاهل الأفضل
+</h2>
+
+<p>
+سواء كنت تحتاج إلى تشطيب أو ديكور أو ترميم أو تجديد،
+فريق <span class="city">بيت آرت</span> جاهز لتنفيذ أعمال منزلك باحترافية.
+</p>
+
+<div class="buttons">
+
+<a
+class="btn whatsapp"
+href="https://wa.me/966549699045"
+target="_blank">
+💬 احجز عبر واتساب
+</a>
+
+<a
+class="btn call"
+href="tel:+966549699045">
+📞 تحدث معنا الآن
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+🔥 لا تفوّت خصم 30%
+</h2>
+
+<p>
+الخصم متاح لأول 20 عميل فقط
+</p>
+
+<div class="phone">
+0549699045
+</div>
+
+<div class="buttons">
+
+<a
+class="btn whatsapp"
+href="https://wa.me/966549699045"
+target="_blank">
+💬 واتساب
+</a>
+
+<a
+class="btn call"
+href="tel:+966549699045">
+📞 اتصال
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+© 2026 بيت آرت للمقاولات والديكورات
+<br>
+الرياض - المملكة العربية السعودية
+
+</footer>
+
+
+<a
+class="floating-whatsapp"
+href="https://wa.me/966549699045"
+target="_blank"
+aria-label="التواصل عبر واتساب">
+💬
+</a>
+
+</body>
+</html>
